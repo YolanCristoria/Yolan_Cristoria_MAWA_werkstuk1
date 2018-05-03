@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6580A085209B4358000919FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A084209B4358000919FB /* AppDelegate.swift */; };
+		6580A087209B4358000919FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A086209B4358000919FB /* ViewController.swift */; };
+		6580A08A209B4358000919FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6580A088209B4358000919FB /* Main.storyboard */; };
+		6580A08C209B4358000919FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6580A08B209B4358000919FB /* Assets.xcassets */; };
+		6580A08F209B4358000919FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6580A08D209B4358000919FB /* LaunchScreen.storyboard */; };
+		6580A09A209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A099209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift */; };
+		6580A0A5209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0A4209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6580A096209B4358000919FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6580A079209B4358000919FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6580A080209B4358000919FB;
+			remoteInfo = Werkstuk1_Yolan_Cristoria;
+		};
+		6580A0A1209B4358000919FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6580A079209B4358000919FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6580A080209B4358000919FB;
+			remoteInfo = Werkstuk1_Yolan_Cristoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6580A081209B4358000919FB /* Werkstuk1_Yolan_Cristoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Yolan_Cristoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6580A084209B4358000919FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6580A086209B4358000919FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6580A089209B4358000919FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6580A08B209B4358000919FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6580A08E209B4358000919FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6580A090209B4358000919FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6580A095209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1_Yolan_CristoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6580A099209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1_Yolan_CristoriaTests.swift; sourceTree = "<group>"; };
+		6580A09B209B4358000919FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6580A0A0209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1_Yolan_CristoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6580A0A4209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1_Yolan_CristoriaUITests.swift; sourceTree = "<group>"; };
+		6580A0A6209B4358000919FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6580A07E209B4358000919FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A092209B4358000919FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A09D209B4358000919FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6580A078209B4358000919FB = {
+			isa = PBXGroup;
+			children = (
+				6580A083209B4358000919FB /* Werkstuk1_Yolan_Cristoria */,
+				6580A098209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests */,
+				6580A0A3209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests */,
+				6580A082209B4358000919FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6580A082209B4358000919FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6580A081209B4358000919FB /* Werkstuk1_Yolan_Cristoria.app */,
+				6580A095209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.xctest */,
+				6580A0A0209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6580A083209B4358000919FB /* Werkstuk1_Yolan_Cristoria */ = {
+			isa = PBXGroup;
+			children = (
+				6580A084209B4358000919FB /* AppDelegate.swift */,
+				6580A086209B4358000919FB /* ViewController.swift */,
+				6580A088209B4358000919FB /* Main.storyboard */,
+				6580A08B209B4358000919FB /* Assets.xcassets */,
+				6580A08D209B4358000919FB /* LaunchScreen.storyboard */,
+				6580A090209B4358000919FB /* Info.plist */,
+			);
+			path = Werkstuk1_Yolan_Cristoria;
+			sourceTree = "<group>";
+		};
+		6580A098209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6580A099209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift */,
+				6580A09B209B4358000919FB /* Info.plist */,
+			);
+			path = Werkstuk1_Yolan_CristoriaTests;
+			sourceTree = "<group>";
+		};
+		6580A0A3209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6580A0A4209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift */,
+				6580A0A6209B4358000919FB /* Info.plist */,
+			);
+			path = Werkstuk1_Yolan_CristoriaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6580A080209B4358000919FB /* Werkstuk1_Yolan_Cristoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6580A0A9209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_Cristoria" */;
+			buildPhases = (
+				6580A07D209B4358000919FB /* Sources */,
+				6580A07E209B4358000919FB /* Frameworks */,
+				6580A07F209B4358000919FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Werkstuk1_Yolan_Cristoria;
+			productName = Werkstuk1_Yolan_Cristoria;
+			productReference = 6580A081209B4358000919FB /* Werkstuk1_Yolan_Cristoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6580A094209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6580A0AC209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_CristoriaTests" */;
+			buildPhases = (
+				6580A091209B4358000919FB /* Sources */,
+				6580A092209B4358000919FB /* Frameworks */,
+				6580A093209B4358000919FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6580A097209B4358000919FB /* PBXTargetDependency */,
+			);
+			name = Werkstuk1_Yolan_CristoriaTests;
+			productName = Werkstuk1_Yolan_CristoriaTests;
+			productReference = 6580A095209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6580A09F209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6580A0AF209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_CristoriaUITests" */;
+			buildPhases = (
+				6580A09C209B4358000919FB /* Sources */,
+				6580A09D209B4358000919FB /* Frameworks */,
+				6580A09E209B4358000919FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6580A0A2209B4358000919FB /* PBXTargetDependency */,
+			);
+			name = Werkstuk1_Yolan_CristoriaUITests;
+			productName = Werkstuk1_Yolan_CristoriaUITests;
+			productReference = 6580A0A0209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6580A079209B4358000919FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "yolan cristoria";
+				TargetAttributes = {
+					6580A080209B4358000919FB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6580A094209B4358000919FB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6580A080209B4358000919FB;
+					};
+					6580A09F209B4358000919FB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6580A080209B4358000919FB;
+					};
+				};
+			};
+			buildConfigurationList = 6580A07C209B4358000919FB /* Build configuration list for PBXProject "Werkstuk1_Yolan_Cristoria" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6580A078209B4358000919FB;
+			productRefGroup = 6580A082209B4358000919FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6580A080209B4358000919FB /* Werkstuk1_Yolan_Cristoria */,
+				6580A094209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests */,
+				6580A09F209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6580A07F209B4358000919FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6580A08F209B4358000919FB /* LaunchScreen.storyboard in Resources */,
+				6580A08C209B4358000919FB /* Assets.xcassets in Resources */,
+				6580A08A209B4358000919FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A093209B4358000919FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A09E209B4358000919FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6580A07D209B4358000919FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6580A087209B4358000919FB /* ViewController.swift in Sources */,
+				6580A085209B4358000919FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A091209B4358000919FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6580A09A209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6580A09C209B4358000919FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6580A0A5209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6580A097209B4358000919FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6580A080209B4358000919FB /* Werkstuk1_Yolan_Cristoria */;
+			targetProxy = 6580A096209B4358000919FB /* PBXContainerItemProxy */;
+		};
+		6580A0A2209B4358000919FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6580A080209B4358000919FB /* Werkstuk1_Yolan_Cristoria */;
+			targetProxy = 6580A0A1209B4358000919FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6580A088209B4358000919FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6580A089209B4358000919FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6580A08D209B4358000919FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6580A08E209B4358000919FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6580A0A7209B4358000919FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6580A0A8209B4358000919FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6580A0AA209B4358000919FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_Cristoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-Cristoria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6580A0AB209B4358000919FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_Cristoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-Cristoria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6580A0AD209B4358000919FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_CristoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-CristoriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Werkstuk1_Yolan_Cristoria.app/Werkstuk1_Yolan_Cristoria";
+			};
+			name = Debug;
+		};
+		6580A0AE209B4358000919FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_CristoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-CristoriaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Werkstuk1_Yolan_Cristoria.app/Werkstuk1_Yolan_Cristoria";
+			};
+			name = Release;
+		};
+		6580A0B0209B4358000919FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_CristoriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-CristoriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Werkstuk1_Yolan_Cristoria;
+			};
+			name = Debug;
+		};
+		6580A0B1209B4358000919FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Werkstuk1_Yolan_CristoriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-CristoriaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Werkstuk1_Yolan_Cristoria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6580A07C209B4358000919FB /* Build configuration list for PBXProject "Werkstuk1_Yolan_Cristoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6580A0A7209B4358000919FB /* Debug */,
+				6580A0A8209B4358000919FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6580A0A9209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_Cristoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6580A0AA209B4358000919FB /* Debug */,
+				6580A0AB209B4358000919FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6580A0AC209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_CristoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6580A0AD209B4358000919FB /* Debug */,
+				6580A0AE209B4358000919FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6580A0AF209B4358000919FB /* Build configuration list for PBXNativeTarget "Werkstuk1_Yolan_CristoriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6580A0B0209B4358000919FB /* Debug */,
+				6580A0B1209B4358000919FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6580A079209B4358000919FB /* Project object */;
+}
