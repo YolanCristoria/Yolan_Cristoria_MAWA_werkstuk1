@@ -14,6 +14,10 @@
 		6580A08F209B4358000919FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6580A08D209B4358000919FB /* LaunchScreen.storyboard */; };
 		6580A09A209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A099209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests.swift */; };
 		6580A0A5209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0A4209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift */; };
+		6580A0B3209B44A0000919FB /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0B2209B44A0000919FB /* Persoon.swift */; };
+		6580A0B5209B50AF000919FB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0B4209B50AF000919FB /* TableViewController.swift */; };
+		6580A0B7209B55BB000919FB /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0B6209B55BB000919FB /* Adres.swift */; };
+		6580A0B9209B6116000919FB /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A0B8209B6116000919FB /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		6580A0A0209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Werkstuk1_Yolan_CristoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6580A0A4209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Werkstuk1_Yolan_CristoriaUITests.swift; sourceTree = "<group>"; };
 		6580A0A6209B4358000919FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6580A0B2209B44A0000919FB /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
+		6580A0B4209B50AF000919FB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6580A0B6209B55BB000919FB /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
+		6580A0B8209B6116000919FB /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		6580A083209B4358000919FB /* Werkstuk1_Yolan_Cristoria */ = {
 			isa = PBXGroup;
 			children = (
+				6580A0B2209B44A0000919FB /* Persoon.swift */,
 				6580A084209B4358000919FB /* AppDelegate.swift */,
 				6580A086209B4358000919FB /* ViewController.swift */,
+				6580A0B4209B50AF000919FB /* TableViewController.swift */,
 				6580A088209B4358000919FB /* Main.storyboard */,
 				6580A08B209B4358000919FB /* Assets.xcassets */,
 				6580A08D209B4358000919FB /* LaunchScreen.storyboard */,
 				6580A090209B4358000919FB /* Info.plist */,
+				6580A0B6209B55BB000919FB /* Adres.swift */,
+				6580A0B8209B6116000919FB /* ItemViewController.swift */,
 			);
 			path = Werkstuk1_Yolan_Cristoria;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6580A0B7209B55BB000919FB /* Adres.swift in Sources */,
 				6580A087209B4358000919FB /* ViewController.swift in Sources */,
 				6580A085209B4358000919FB /* AppDelegate.swift in Sources */,
+				6580A0B3209B44A0000919FB /* Persoon.swift in Sources */,
+				6580A0B5209B50AF000919FB /* TableViewController.swift in Sources */,
+				6580A0B9209B6116000919FB /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-Cristoria";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ehb.Werkstuk1-Yolan-Cristoria";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
