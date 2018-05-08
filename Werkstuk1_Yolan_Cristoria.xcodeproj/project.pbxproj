@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656FFD1220A19A3E00B1ECC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656FFD1120A19A3E00B1ECC6 /* MapKit.framework */; };
 		6580A085209B4358000919FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A084209B4358000919FB /* AppDelegate.swift */; };
 		6580A087209B4358000919FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580A086209B4358000919FB /* ViewController.swift */; };
 		6580A08A209B4358000919FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6580A088209B4358000919FB /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		656FFD1120A19A3E00B1ECC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6580A081209B4358000919FB /* Werkstuk1_Yolan_Cristoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Yolan_Cristoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6580A084209B4358000919FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6580A086209B4358000919FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656FFD1220A19A3E00B1ECC6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		656FFD1020A19A3E00B1ECC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				656FFD1120A19A3E00B1ECC6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6580A078209B4358000919FB = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				6580A098209B4358000919FB /* Werkstuk1_Yolan_CristoriaTests */,
 				6580A0A3209B4358000919FB /* Werkstuk1_Yolan_CristoriaUITests */,
 				6580A082209B4358000919FB /* Products */,
+				656FFD1020A19A3E00B1ECC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +218,11 @@
 					6580A080209B4358000919FB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6580A094209B4358000919FB = {
 						CreatedOnToolsVersion = 9.2;

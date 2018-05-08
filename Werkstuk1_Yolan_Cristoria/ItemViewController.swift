@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
-class ItemViewController: UIViewController {
+class ItemViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     var myTemp: Persoon?;
+    var locationManager = CLLocationManager();
     
     @IBOutlet weak var imgPersoonIMG: UIImageView!
     
@@ -28,8 +31,34 @@ class ItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        lblNaam.text = myTemp?.voornaam
+        lblVoornaam.text = myTemp?.naam
+        lblGemeente.text = myTemp?.adres?.gemeente
+        lblStraat.text = myTemp?.adres?.straat
+        lblHuisnummer.text = myTemp?.adres?.huisnummer?.description
+        lblPostcode.text = myTemp?.adres?.postcode?.description
+        imgPersoonIMG.image = myTemp?.foto
+        
+        //Mapkit
+        locationManager.requestAlwaysAuthorization();
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.startUpdatingLocation();
+        }
+        
+        //Gesturetest
+        
+
+    }
+    @IBAction func tapOnImage(_ sender: UITapGestureRecognizer) {
+        
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation){
+        let center = CLLocationCoordinate2D(latitude: (myTemp?.coordinaat?.latitude)!, longitude: (myTemp?.coordinaat?.longitude)!)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta:0.01, longitudeDelta: 0.01))
+        mapView.setRegion(region, animated: true);
     }
 
     override func didReceiveMemoryWarning() {

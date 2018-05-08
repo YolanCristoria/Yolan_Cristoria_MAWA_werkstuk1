@@ -16,19 +16,16 @@ class Persoon {
     var voornaam: String?
     var foto: UIImage?
     var adres: Adres?
-//    var coordinaat: CLLocationCoordinate2D?
-//    var gpsLongitude: Float?
-//    var gpsLatitude: Float?
+    var coordinaat: CLLocationCoordinate2D?
     var telefoonnummer: Int?
     
-    init(naam: String, voornaam: String, foto: UIImage?, adres: Adres?, telefoonnummer: Int?) {
+    init(naam: String, voornaam: String, foto: UIImage?, adres: Adres?, telefoonnummer: Int?, coordinaat: CLLocationCoordinate2D) {
         self.naam = naam
         self.voornaam = voornaam
         self.foto = foto
         self.adres = adres
-//        self.gpsLongitude = longitude
-//        self.gpsLatitude = latitude
         self.telefoonnummer = telefoonnummer
+        self.coordinaat = coordinaat
     }
     
     

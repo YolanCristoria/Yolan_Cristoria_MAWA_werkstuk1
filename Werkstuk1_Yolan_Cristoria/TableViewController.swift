@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class TableViewController: UITableViewController {
     
@@ -24,9 +25,15 @@ class TableViewController: UITableViewController {
         let jorickAdres = Adres(straat: "Jorickstraat", huisnummer: 22, gemeente: "Yorickenyorick", postcode: 2000)
         let thomasAdres = Adres(straat: "Thomasstraat", huisnummer: 33, gemeente: "Tomaatenstad", postcode: 3000)
         
-        Personen.append(Persoon(naam: "Cristoria", voornaam: "Yolan", foto: UIImage(named: "Yolan"), adres: yolanAdres, telefoonnummer: 0492111111))
-        Personen.append(Persoon(naam: "De Clercq", voornaam: "Jorick", foto: UIImage(named: "Jorick"), adres: jorickAdres, telefoonnummer: 0492222222))
-        Personen.append(Persoon(naam: "Bonemeijer", voornaam: "Thomas", foto: UIImage(named: "Thomas"), adres: thomasAdres, telefoonnummer: 0492333333))
+        let yolancoordinaat = CLLocationCoordinate2D(latitude: 51.004951, longitude: 4.303231)
+        let jorickcoordinaat = CLLocationCoordinate2D(latitude: 51.194838, longitude: 4.289027)
+        let thomascoordinaat = CLLocationCoordinate2D(latitude: 51.171838, longitude: 4.103232)
+        
+
+        
+        Personen.append(Persoon(naam: "Cristoria", voornaam: "Yolan", foto: UIImage(named: "Yolan"), adres: yolanAdres, telefoonnummer: 0492111111, coordinaat: yolancoordinaat))
+        Personen.append(Persoon(naam: "De Clercq", voornaam: "Jorick", foto: UIImage(named: "Jorick"), adres: jorickAdres, telefoonnummer: 0492222222, coordinaat: jorickcoordinaat))
+        Personen.append(Persoon(naam: "Bonemeijer", voornaam: "Thomas", foto: UIImage(named: "Thomas"), adres: thomasAdres, telefoonnummer: 0492333333, coordinaat: thomascoordinaat))
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,15 +106,10 @@ class TableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "naarPersoon" {
+        if segue.identifier == "naarDetail" {
             if let vc = segue.destination as? ItemViewController {
                 let indexPath = tableView.indexPathForSelectedRow
-                let naam = Personen[(indexPath?.row)!]["naam"] as! String
-                let voornaam = Personen[(indexPath?.row)!]["voornaam"] as! String
-                let persoonImg = Personen[(indexPath?.row)!]["foto"] as! UIImage
-                let Adres = Personen[(indexPath?.row)!]["adres"] as! Adres
-                let theItem = Item(Titel: theTitle, Afbeelding: theImg)
-                vc.myTemp = theItem
+                vc.myTemp = self.Personen[(indexPath?.row)!]
             }
         }
     }
