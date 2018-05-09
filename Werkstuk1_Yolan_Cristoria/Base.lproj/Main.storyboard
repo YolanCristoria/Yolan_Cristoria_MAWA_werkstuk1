@@ -178,6 +178,7 @@
                         <outlet property="lblPostcode" destination="dnT-fq-3iw" id="mBU-W2-FdT"/>
                         <outlet property="lblStraat" destination="INd-Iu-3MF" id="nJl-FJ-IHY"/>
                         <outlet property="lblVoornaam" destination="oF1-jc-4Fi" id="1AX-Zj-yuQ"/>
+                        <outlet property="myMapView" destination="nOP-sr-x5i" id="f1S-Em-o3V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRj-8W-bGh" userLabel="First Responder" sceneMemberID="firstResponder"/>

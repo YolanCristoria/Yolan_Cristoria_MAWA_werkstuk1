@@ -29,6 +29,8 @@ class ItemViewController: UIViewController, MKMapViewDelegate, CLLocationManager
     
     @IBOutlet weak var lblPostcode: UILabel!
     
+    @IBOutlet weak var myMapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -45,6 +47,12 @@ class ItemViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         if CLLocationManager.locationServicesEnabled(){
             locationManager.startUpdatingLocation();
         }
+        
+        //Annotation
+        let localAnnotation = MyAnnotation(coordinate: CLLocationCoordinate2D(latitude: (myTemp?.coordinaat?.latitude)!, longitude: (myTemp?.coordinaat?.longitude)!), title: "locatie")
+
+        self.myMapView.addAnnotation(localAnnotation)
+        
     }
     
     //Gesturetest
