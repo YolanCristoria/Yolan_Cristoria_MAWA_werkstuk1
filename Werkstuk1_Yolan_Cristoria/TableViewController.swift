@@ -29,8 +29,6 @@ class TableViewController: UITableViewController {
         let jorickcoordinaat = CLLocationCoordinate2D(latitude: 51.194838, longitude: 4.289027)
         let thomascoordinaat = CLLocationCoordinate2D(latitude: 51.171838, longitude: 4.103232)
         
-
-        
         Personen.append(Persoon(naam: "Cristoria", voornaam: "Yolan", foto: UIImage(named: "Yolan"), adres: yolanAdres, telefoonnummer: 0492111111, coordinaat: yolancoordinaat))
         Personen.append(Persoon(naam: "De Clercq", voornaam: "Jorick", foto: UIImage(named: "Jorick"), adres: jorickAdres, telefoonnummer: 0492222222, coordinaat: jorickcoordinaat))
         Personen.append(Persoon(naam: "Bonemeijer", voornaam: "Thomas", foto: UIImage(named: "Thomas"), adres: thomasAdres, telefoonnummer: 0492333333, coordinaat: thomascoordinaat))

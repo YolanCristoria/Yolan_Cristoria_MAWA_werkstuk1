@@ -42,16 +42,13 @@ class ItemViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         
         //Mapkit
         locationManager.requestAlwaysAuthorization();
-        
         if CLLocationManager.locationServicesEnabled(){
             locationManager.startUpdatingLocation();
         }
-        
-        //Gesturetest
-        
-
     }
-    @IBAction func tapOnImage(_ sender: UITapGestureRecognizer) {
+    
+    //Gesturetest
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         
     }
     
@@ -76,5 +73,13 @@ class ItemViewController: UIViewController, MKMapViewDelegate, CLLocationManager
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "naarFullsizeImage" {
+            if let vc = segue.destination as? FullImageViewController {
+                vc.tempImage = myTemp?.foto
+            }
+        }
+    }
 
 }

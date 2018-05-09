@@ -56,11 +56,43 @@
                             <outlet property="delegate" destination="r3W-b1-acw" id="7ri-xM-TfY"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="jJH-ew-dx0"/>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Personen" id="9kV-uq-o5i"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJb-TA-Xhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="unP-w9-LEp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </objects>
-            <point key="canvasLocation" x="973" y="302"/>
+            <point key="canvasLocation" x="1311.2" y="301.79910044977515"/>
+        </scene>
+        <!--Full Image View Controller-->
+        <scene sceneID="d6R-7T-1OP">
+            <objects>
+                <viewController id="jQn-lG-ymr" customClass="FullImageViewController" customModule="Werkstuk1_Yolan_Cristoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwQ-OP-gi7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-2H-653">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oKw-cn-9Zt"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgFullImage" destination="yeK-2H-653" id="BUe-ou-Pej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPl-tO-uAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128.8000000000002" y="-500.59970014992507"/>
         </scene>
         <!--Item View Controller-->
         <scene sceneID="X9h-4J-yEE">
@@ -70,10 +102,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOs-Ev-gf9">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOs-Ev-gf9">
                                 <rect key="frame" x="16" y="81" width="167" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fpU-ns-NgV" appends="YES" id="fuK-Wo-FWU"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNQ-Dv-n2D">
                                 <rect key="frame" x="17" y="254" width="292" height="21"/>
@@ -146,8 +181,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRj-8W-bGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fpU-ns-NgV">
+                    <connections>
+                        <action selector="imageTapped:" destination="JBf-tc-t8E" id="vv4-mS-aad"/>
+                        <segue destination="jQn-lG-ymr" kind="show" identifier="naarFullsizeImage" id="he5-L7-Edj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1791.2" y="297.30134932533736"/>
+            <point key="canvasLocation" x="2130.4000000000001" y="297.30134932533736"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y4c-TD-xtO">
@@ -158,12 +199,53 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="r3W-b1-acw" kind="relationship" relationship="rootViewController" id="mwA-j1-Mx1"/>
+                        <segue destination="7iq-Q5-nxL" kind="relationship" relationship="rootViewController" id="mwA-j1-Mx1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikh-0r-h4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="302"/>
+            <point key="canvasLocation" x="-170" y="302"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="abj-Pk-qVh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7iq-Q5-nxL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="P8f-Fa-rnW"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TIb-Ec-rZz">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="r3W-b1-acw" kind="relationship" relationship="viewControllers" id="NI9-Zc-UUN"/>
+                        <segue destination="paY-QE-Xy7" kind="relationship" relationship="viewControllers" id="hta-gX-vNB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjs-gj-A4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="302"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="uoL-iY-ebL">
+            <objects>
+                <viewController id="paY-QE-Xy7" customClass="MapViewController" customModule="Werkstuk1_Yolan_Cristoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEa-dn-aQL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isV-rl-Cf5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eU7-Ad-pUa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="HPR-JG-dsc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xP2-Am-M57" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309.5999999999999" y="1059.2203898050975"/>
         </scene>
     </scenes>
     <resources>
